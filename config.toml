@@ -1,0 +1,44 @@
+theme = "gruvbox_light_hard"
+
+[keys.normal]
+"{" = "goto_prev_paragraph"
+"}" = "goto_next_paragraph"
+"A-{" = "page_cursor_half_up"
+"A-}" = "page_cursor_half_down"
+"-" = "move_visual_line_up"
+"+" = "move_visual_line_down"
+"ret" = "move_visual_line_down"
+
+[editor]
+line-number = "relative"
+cursorline = true
+true-color = true
+
+[editor.statusline]
+left = ["spinner", "file-name"]
+center = ["mode", "file-type", "diagnostics"]
+right = ["file-encoding", "selections", "position"]
+mode.insert = "INSERTAR"
+mode.select = "VISUAL"
+mode.normal = "NORMAL"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+'$' = '$'
+
+# or control each character
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
